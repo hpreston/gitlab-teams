@@ -25,7 +25,8 @@ docker run -p 5000:5000 sandbox-gitlab.cisco.com:4567/hapresto/gitlab-teams
 
 ```
 docker build -t gitlab-teams .
-docker run -b -p 5000:5000 \
+docker run -d -p 5000:5000 \
+  --name gitlab-teams \
   -e SPARK_ACCESS_TOKEN=$SPARK_ACCESS_TOKEN \
   -e SPARK_ROOM=$SPARK_ROOM \
   gitlab-teams
