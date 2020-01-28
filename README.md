@@ -9,8 +9,6 @@ Full documentation on gitlab webhooks are available [here](https://docs.gitlab.c
 ### From Source
 
 ```
-git clone https://sandbox-gitlab.cisco.com/hapresto/gitlab-teams
-cd gitlab-teams
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -20,7 +18,7 @@ python app.py
 ### Using Docker
 
 ```
-docker run -p 5000:5000 sandbox-gitlab.cisco.com:4567/hapresto/gitlab-teams
+docker run -p 5000:5000 gitlab-teams
 ```
 
 ```
